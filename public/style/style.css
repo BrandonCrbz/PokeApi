@@ -1,0 +1,34 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #202124;
+}
+
+main section table {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+}
+
+main section table th {
+    /*border: 1px solid black;*/
+    background-color: #292a2d;
+    color: darkorange;
+    padding: 10px;
+}
+
+main section table td {
+    /*border: 1px solid black;*/
+    background-color: #292a2d;
+    color: #f1f1f1;
+    padding: 10px;
+}
+
+main section table td:nth-child(1) {
+    color: darkorange;
+}
+
+img {
+    width: 50%;
+}
