@@ -5,6 +5,32 @@ body {
     background-color: #202124;
 }
 
+header nav div {
+    padding: 25px;
+    border-bottom: 2px solid darkorange;
+}
+
+header nav div ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+header nav div ul li {
+    margin: 0 25px;
+}
+
+header nav div ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+header nav div ul li a:hover {
+    color: darkorange;
+    text-decoration: underline;
+}
+
 main section table {
     text-align: center;
     width: 90%;
@@ -30,5 +56,5 @@ main section table td:nth-child(1) {
 }
 
 img {
-    width: 50%;
+    width: 10vh;
 }

@@ -16,7 +16,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=100000')
                     let imgPoke = document.createElement('img');
                     let spritePoke = document.createElement('td');
                     if (data.sprites.other['official-artwork'].front_default == null) {
-                        imgPoke.src = "./public/img/poke-ball.png";
+                        imgPoke.src = "./public/img/no-image-md.png";
                         spritePoke.appendChild(imgPoke);
                         newPoke.appendChild(spritePoke);
                     } else {
@@ -28,7 +28,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=100000')
                     let imgPoke1 = document.createElement('img');
                     let spriteShiny = document.createElement('td');
                     if (data.sprites.other['official-artwork'].front_shiny == null) {
-                        imgPoke1.src = "./public/img/poke-ball.png";
+                        imgPoke1.src = "./public/img/no-image-md.png";
                         spriteShiny.appendChild(imgPoke1);
                         newPoke.appendChild(spriteShiny);
                     } else {
@@ -36,7 +36,6 @@ fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=100000')
                         spriteShiny.appendChild(imgPoke1);
                         newPoke.appendChild(spriteShiny);
                     }
-                    //console.log(data.sprites.other['official-artwork']);
 
                     let namePoke = document.createElement('td');
                     namePoke.innerText = element.name;
